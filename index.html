@@ -12,30 +12,29 @@
       <h1>Tic-Tac-Toe</h1>
     </div>
     <div class="topSection">
-      <div class="gameGrid">
-        <div class="grid">1</div>
-        <div class="grid">2</div>
-        <div class="grid">3</div>
-        <div class="grid">4</div>
-        <div class="grid">5</div>
-        <div class="grid">6</div>
-        <div class="grid">7</div>
-        <div class="grid">8</div>
-        <div class="grid">9</div>
+      <div id="player1">
+        <label for="player1Name"> Player 1 name</label>
+        <input id="player1Name" type="text" />
+        <button id="myButton1">Submit</button>
       </div>
-    <div class="player1">
-        <label for="playerName"> Player 1 name</label>
-        <input class="player1Name" type="text" />
-        <button> Submit</button>
+      <div id="player2">
+        <label for="player2Name"> Player 2 name</label>
+        <input id="player2Name" type="text" />
+        <button id="myButton2">Submit</button>
+      </div>
+      <div id="gameGrid">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
     </div>
-    
-    <div class="player2">
-        <label for="playerName"> Player 2 name</label>
-        <input class="player2Name" type="text" />
-        <button> Submit</button>
-    </div>
-    </div>
-</div>
+    <div id="bottom"></div>
     <script src="JS.js"></script>
   </body>
 </html>

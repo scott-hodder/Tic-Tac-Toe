@@ -1,58 +1,82 @@
-.gameGrid {
+body {
+  background-color: #f2e34c;
+}
+
+.header {
+  text-align: center;
+  font-size: 50px;
+}
+#gameGrid {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   width: 50vw;
   height: 50vh;
+  background-color: wheat;
+  border-radius: 30px;
+  box-shadow: 1px 1px hsl(0, 0%, 27%), 2px 2px hsl(0, 0%, 27%),
+    3px 3px hsl(0, 0%, 27%), 4px 4px hsl(0, 0%, 27%), 5px 5px hsl(0, 0%, 27%),
+    6px 6px hsl(0, 0%, 27%), 7px 7px hsl(0, 0%, 27%), 8px 8px hsl(0, 0%, 27%);
 }
 
-.grid {
-  border: solid black 1px;
+.cell {
+  border-bottom: solid black 5px;
+  border-right: solid black 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.cell:nth-child(3n) {
+  border-right: none;
+}
+.cell:nth-child(n + 7) {
+  border-bottom: none;
 }
 
 .topSection {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/*.grid {
-  border: 1px solid black;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+.welcomeMessage1 {
+  color: blue;
+  font-size: 20px;
 }
-.grid1 {
-  grid-column: 1;
-  border: 1px solid black;
+
+.welcomeMessage2 {
+  color: red;
+  font-size: 20px;
 }
-.grid2 {
-  grid-column: 2;
-  border: 1px solid black;
+
+.highlight {
+  background-color: lightgreen;
 }
-.grid3 {
-  grid-column: 3;
-  border: 1px solid black;
+
+.winMessage {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  font-size: 100px;
+  transform: translate(-50%, -50%);
+  color: teal;
+  background-color: rgba(242, 227, 76, 0);
+  text-align: center;
+  transition: 1s;
 }
-.grid4 {
-  grid-column: 1;
-  border: 1px solid black;
+
+.resetButton {
+  display: flex;
 }
-.grid5 {
-  grid-column: 2;
-  border: 1px solid black;
+
+span {
+  color: white;
+  transform: scale(1.5);
+  transition: 0.4s;
 }
-.grid6 {
-  grid-column: 3;
-  border: 1px solid black;
+
+span:hover {
+  transform: scale(1.2);
+  color: teal;
 }
-.grid7 {
-  grid-column: 1;
-  border: 1px solid black;
-}
-.grid8 {
-  grid-column: 2;
-  border: 1px solid black;
-}
-.grid9 {
-  grid-column: 3;
-  border: 1px solid black;
-}
-*/
